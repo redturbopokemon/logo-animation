@@ -1,0 +1,45 @@
+.logo {
+    position: relative;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+
+    display: grid;
+    width: 576px;
+    height: 512px;
+
+    left: 50%;
+    top: 50%;
+    /*-webkit-transform: translate(-50%,-50%);*/
+    /*-moz-transform: translate(-50%, -50%);*/
+    /*-ms-transform: translate(-50%, -50%);*/
+    /*-o-transform: translate(-50%, -50%);*/
+    transform: translate(-50%, 20%);
+
+}
+
+.I {
+    position: relative;
+    grid-column: 1/5;
+    grid-row: 1/9;
+    background: chocolate;
+    animation-name: logo;
+    animation-duration: 1s;
+}
+._ {
+    position: relative;
+    grid-column: 6/10;
+    grid-row: 8/9;
+    background: #c03e15;
+    animation-name: logo;
+    animation-duration: 1s;
+
+;
+}
+@keyframes logo {
+    0% {
+        transform: scale;
+    }
+    100% {
+        transform: scale(2);
+    }
+}
